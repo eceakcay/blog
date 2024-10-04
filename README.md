@@ -1,3 +1,3 @@
 # blog
- blog-sayfasi: blog-ashen-xi-20.vercel.app
+ blog-sayfasi: https://blog-ashen-xi-20.vercel.app/
 
