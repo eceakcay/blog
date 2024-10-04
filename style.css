@@ -1,0 +1,146 @@
+body {
+    background: url('background2.jpg');
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #06131b;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    /* Tam genişlik */
+    z-index: 999;
+    margin: 0;
+    /* Boşlukları kaldır */
+    box-sizing: border-box;
+}
+
+.navbar a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 30px;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: #885882;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-image {
+    margin: 20px 0;
+}
+
+.logo {
+    font-size: 60px;
+    color: #42113c;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Header Image */
+.header-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Content */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-info h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.content-info p {
+    font-size: large;
+    line-height: 1.6;
+}
+
+/* Video Container */
+.video-container {
+    margin: 20px auto;
+    width: 400px;
+    /* Videoyu daha küçük yapmak için */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #06131b;
+    color: white;
+    width: 100vw;
+    /* Tam genişlik */
+    margin: 0;
+    /* Boşlukları kaldır */
+    box-sizing: border-box;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 40px;
+    }
+
+    .header-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .navbar a {
+        margin: 0 15px;
+        font-size: 18px;
+    }
+
+    .content-info h1 {
+        font-size: 36px;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+}
