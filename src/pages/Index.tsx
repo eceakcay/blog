@@ -103,13 +103,11 @@ const Index = () => {
 
 {/* HERO SECTION */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 mb-32 md:mb-48"> 
-        {/* mb-32: Mobilde boşluk | md:mb-48: Masaüstünde daha büyük boşluk */}
-        
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-              <Badge className="mb-6 py-2 px-6 bg-white/5 border-white/10 text-primary-foreground backdrop-blur-md font-bold tracking-widest uppercase">
-                <Sparkles size={14} className="mr-2 text-primary" /> IOS DEVELOPER
+              <Badge className="mb-6 py-2 px-6 bg-white/5 border-white/10 text-purple-400 backdrop-blur-md font-bold tracking-widest uppercase border-purple-500/20">
+                <Sparkles size={14} className="mr-2 text-purple-400" /> IOS DEVELOPER
               </Badge>
             </motion.div>
             
@@ -119,14 +117,14 @@ const Index = () => {
               transition={{ delay: 0.2, duration: 0.8 }}
               className="text-7xl md:text-9xl font-black tracking-tighter text-white mb-8 leading-[0.85]"
             >
-              KODLA <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-purple-400 to-accent">TASARLA.</span>
+              KODLA <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-purple-500 to-indigo-500">TASARLA.</span>
             </motion.h1>
 
             <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.5, duration: 0.8 }} className="mb-12">
                 <img 
                     src="/ben.png" 
                     alt="Ece Akçay Portre"
-                    className="w-48 h-48 rounded-full object-cover mx-auto border-4 border-primary shadow-lg shadow-primary/30"
+                    className="w-48 h-48 rounded-full object-cover mx-auto border-4 border-purple-500 shadow-lg shadow-purple-500/40 transition-all hover:scale-105 duration-500"
                 />
             </motion.div>
 
@@ -140,18 +138,24 @@ const Index = () => {
             </motion.p>
 
             <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.6 }} className="flex flex-wrap justify-center gap-6">
-              <Button size="lg" onClick={() => scrollToSection('projeler')} className="h-16 px-10 rounded-2xl bg-primary text-black font-black text-lg hover:shadow-[0_0_30px_rgba(var(--primary),0.5)] transition-all">
+              {/* MOR BUTON: Parlak ve Neon Efektli */}
+              <Button 
+                size="lg" 
+                onClick={() => scrollToSection('projeler')} 
+                className="h-16 px-10 rounded-2xl bg-purple-600 text-white font-black text-lg shadow-[0_0_20px_rgba(168,85,247,0.4)] hover:bg-purple-500 hover:shadow-[0_0_35px_rgba(168,85,247,0.6)] transition-all transform hover:scale-105"
+              >
                 PROJELERİ GÖR <ArrowRight className="ml-2" />
               </Button>
+
               <div className="flex gap-4">
                 <a href="https://github.com/eceakcay" target="_blank" rel="noopener noreferrer">
-                  <button className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white/10 hover:border-primary/50 transition-all group">
-                    <Github size={24} className="text-white group-hover:text-primary transition-colors" />
+                  <button className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white/10 hover:border-purple-500/50 transition-all group shadow-xl">
+                    <Github size={24} className="text-white group-hover:text-purple-400 transition-colors" />
                   </button>
                 </a>
                 <a href="https://www.linkedin.com/in/ece-ak%C3%A7ay-388721299/" target="_blank" rel="noopener noreferrer">
-                  <button className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white/10 hover:border-primary/50 transition-all group">
-                    <Linkedin size={24} className="text-white group-hover:text-primary transition-colors" />
+                  <button className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white/10 hover:border-purple-500/50 transition-all group shadow-xl">
+                    <Linkedin size={24} className="text-white group-hover:text-purple-400 transition-colors" />
                   </button>
                 </a>
               </div>
@@ -160,29 +164,29 @@ const Index = () => {
         </div>
       </section>
 
-{/* STATS SECTION */}
-      <section className="py-24 border-y border-white/5 bg-white/[0.01] relative z-10">
+{/* STATS SECTION - Daha Kompakt Versiyon */}
+      <section className="py-12 border-y border-white/5 bg-white/[0.01] relative z-10">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
             {stats.map((stat, idx) => (
-              <div key={idx} className="text-center group">
-                {/* İKON: Rengi parlak mor yapıldı, brightness ve glow (parlama) eklendi */}
-                <div className="relative inline-block mb-6">
-                  {/* İkonun arkasındaki hafif parlama bulutu */}
-                  <div className="absolute inset-0 bg-purple-500/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div key={idx} className="flex flex-col items-center justify-center group">
+                {/* İKON: Daha küçük ve odaklı */}
+                <div className="relative inline-block mb-3">
+                  <div className="absolute inset-0 bg-purple-500/20 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
                   
                   <stat.icon 
-                    size={36} 
-                    className="relative z-10 mx-auto text-purple-400 brightness-150 drop-shadow-[0_0_10px_rgba(168,85,247,0.8)] group-hover:scale-125 group-hover:text-purple-300 transition-all duration-500" 
+                    size={28} 
+                    className="relative z-10 mx-auto text-purple-400 brightness-150 drop-shadow-[0_0_8px_rgba(168,85,247,0.6)] group-hover:scale-110 transition-all duration-300" 
                   />
                 </div>
 
-                <h4 className="text-4xl md:text-5xl font-black text-white mb-2 tracking-tighter group-hover:scale-105 transition-transform">
+                {/* DEĞER: Boyut bir tık küçültüldü */}
+                <h4 className="text-3xl md:text-4xl font-black text-white tracking-tighter transition-transform group-hover:text-purple-300">
                   {stat.value}
                 </h4>
                 
-                {/* ETİKET: Daha açık bir gri tonu ve hover anında mor vurgu */}
-                <p className="text-[10px] uppercase tracking-[0.3em] font-black text-slate-400 group-hover:text-purple-400 transition-colors">
+                {/* ETİKET: Daha yakın ve kompakt */}
+                <p className="text-[9px] uppercase tracking-[0.2em] font-black text-slate-500 group-hover:text-purple-400 transition-colors mt-1">
                   {stat.label}
                 </p>
               </div>
@@ -238,7 +242,7 @@ const Index = () => {
       <section id="beceriler" className="py-32 bg-black/40">
         <div className="container mx-auto px-6">
           <div className="text-center mb-20">
-            <h2 className="text-5xl font-black text-white tracking-tighter mb-4 uppercase italic">Teknik Cephanelik</h2>
+            <h2 className="text-5xl font-black text-white tracking-tighter mb-4 uppercase italic">Teknik Yetkinlikler</h2>
             <div className="h-1.5 w-24 bg-primary mx-auto rounded-full" />
           </div>
 
@@ -280,7 +284,7 @@ const Index = () => {
       <section id="projeler" className="py-32">
         <div className="container mx-auto px-6">
           <div className="flex justify-between items-end mb-20">
-            <h2 className="text-6xl font-black text-white tracking-tighter uppercase italic underline decoration-primary decoration-4">İşler.</h2>
+            <h2 className="text-6xl font-black text-white tracking-tighter uppercase italic underline decoration-primary decoration-4">Deneyimler.</h2>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-10">
