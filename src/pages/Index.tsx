@@ -131,7 +131,7 @@ const Index = () => {
 
             <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.5, duration: 0.8 }} className="mb-12">
                 <img 
-                    src="/ben.png" 
+                    src="/ben.webp" 
                     alt="Ece Akçay Portrait"
                     className="w-48 h-48 rounded-full object-cover mx-auto border-4 border-purple-500 shadow-lg shadow-purple-500/40 transition-all hover:scale-105 duration-500"
                 />
