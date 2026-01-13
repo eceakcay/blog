@@ -88,7 +88,8 @@ Create an optimized production build:
 ```bash
 npm run build
 ```
-##🎨 Customization
+
+## 🎨 Customization
 
 Colors:
 Primary theme colors are defined in tailwind.config.js.
@@ -101,7 +102,7 @@ Replace public/favicon.ico with your personalized logo.
 
 ---
 
-##📄 License
+## 📄 License
 
 Designed & Engineered with 💜 by Ece Akçay
 © 2026 — All Rights Reserved
