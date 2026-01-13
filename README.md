@@ -1,58 +1,49 @@
-# Project Build Guide
+# 🚀 Ece Akçay | iOS Developer Portfolio
 
-## Tech Stack
+This is a **high-performance, modern, and aesthetic portfolio website** designed for an **iOS Developer**.  
+It features a **Tech-Noir** aesthetic with neon purple accents, smooth **Framer Motion** animations, and a fully responsive layout.
 
-This project is built using the following technologies:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## ✨ Key Features
 
-## Prerequisites
+- **Neon Purple Aesthetic**  
+  A consistent, high-contrast dark theme.
 
-Make sure your system has Node.js and npm installed.
+- **Dynamic Stats Section**  
+  Real-time feel metrics with interactive hover effects.
 
-We recommend using nvm to install Node.js: [nvm Installation Guide](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Career Journey Timeline**  
+  A sleek, vertical experience map showcasing professional growth.
 
-## Install Dependencies
+- **Performance Optimized**  
+  Uses WebP images, eager loading, and high-priority fetch for LCP optimization.
 
-```sh
-npm install
-```
+- **Fully Responsive**  
+  Seamless experience across **Mobile**, **Tablet**, and **Desktop** devices.
 
-## Development Server
+---
 
-Start the development server with hot reload and instant preview:
+## 🛠 Tech Stack
 
-```sh
-npm run dev
-```
+- **Core:** React 18 + TypeScript  
+- **Build Tool:** Vite  
+- **Styling:** Tailwind CSS  
+- **Components:** shadcn/ui  
+- **Animations:** Framer Motion  
+- **Icons:** Lucide React  
 
-## Build Project
+---
 
-Build for production:
+## 🏗 Project Structure
 
-```sh
-npm run build
-```
-
-## Preview Build
-
-Preview the built project:
-
-```sh
-npm run preview
-```
-
-## Project Structure
-
-```
+```plaintext
 src/
-├── components/     # UI Components
-├── pages/         # Page Components
-├── hooks/         # Custom Hooks
-├── lib/           # Utility Library
-└── main.tsx       # Application Entry Point
+├── components/     # Reusable UI components (Buttons, Badges, etc.)
+├── pages/          # Main page layouts and sections
+├── hooks/          # Custom React hooks for scroll & logic
+├── lib/            # Utility functions (Tailwind Merge, etc.)
+├── assets/         # High-resolution optimized images
+└── main.tsx        # Application entry point
 ```
+
