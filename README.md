@@ -46,4 +46,45 @@ src/
 ├── assets/         # High-resolution optimized images
 └── main.tsx        # Application entry point
 ```
+---
 
+## 🚀 Getting Started
+
+### Prerequisites
+
+Ensure you have **Node.js (LTS)** installed.  
+Using **nvm** is recommended.
+
+---
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/eceakcay/portfolio.git
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+---
+
+Development
+
+Start the development server with hot-reload:
+
+```bash
+npm run dev
+```
+---
+
+Production Build
+
+Create an optimized production build:
+
+```bash
+npm run build
+```
