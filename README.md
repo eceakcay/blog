@@ -88,6 +88,7 @@ Create an optimized production build:
 ```bash
 npm run build
 ```
+--- 
 
 ## 🎨 Customization
 
