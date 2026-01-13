@@ -72,7 +72,7 @@ npm install
 ```
 ---
 
-Development
+## Development
 
 Start the development server with hot-reload:
 
@@ -81,7 +81,7 @@ npm run dev
 ```
 ---
 
-Production Build
+## Production Build
 
 Create an optimized production build:
 
