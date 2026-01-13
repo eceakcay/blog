@@ -88,3 +88,20 @@ Create an optimized production build:
 ```bash
 npm run build
 ```
+##🎨 Customization
+
+Colors:
+Primary theme colors are defined in tailwind.config.js.
+
+Content:
+Update projects and experience arrays in Index.tsx to reflect your latest work.
+
+Favicon:
+Replace public/favicon.ico with your personalized logo.
+
+---
+
+##📄 License
+
+Designed & Engineered with 💜 by Ece Akçay
+© 2026 — All Rights Reserved
